@@ -14,3 +14,28 @@
   padding: 8px;
   margin-top: 20px;
 }
+
+.instructions{
+  font-size: 17px;
+}
+
+.ta-img{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.ta-card{
+  display: flex;
+}
+
+.ta-container{
+  max-width: 400px;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}

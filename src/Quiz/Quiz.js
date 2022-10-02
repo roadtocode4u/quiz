@@ -13,7 +13,12 @@ function Quiz() {
         "WAP to take input 3 subject from user and print sum and percentage.",
         "WAP take input from user and find 'area' of 'rectangle' by taking value of length and breadth from user.",
         "WAP to check if two numbers are equal or not using ternary operator.",
-      ]
+      ],
+      ta: {
+        name: "Pinki Ma'am",
+        imgUrl: "https://github.com/Vaibhavihole31.png",
+        whatsapp: "7821011979",
+      }
     },
     {
       setName: "Set-B",
@@ -22,7 +27,12 @@ function Quiz() {
         "WAP to temperature in Celsius and convert it into Fahrenheit. 🌡 HINT: use formula °F = (°C × 9/5) + 32 ",
         "Write a c program take  input from user and find 'area' of 'circle' by taking value of radius from user.",
         "WAP to find largest number among two numbers using ternary operator.",
-      ]
+      ],
+      ta: {
+        name: "Vaishnavi Ma'am",
+        imgUrl: "https://github.com/vaishnavihole.png",
+        whatsapp: "9588603013",
+      }
     },
     {
       setName: "Set-C",
@@ -31,7 +41,12 @@ function Quiz() {
         "WAP to calculate simple interest by taking values of Principle, Rate and Time from user. 💰 HINT: use formula SI = (p * r * t) / 100",
         "Write a c program to calculate 'perimeter' of 'circle' by taking value of radius from user.",
         "WAP to check if given number is divisible by 5 and 3 or not using ternary operator",
-      ]
+      ],
+      ta: {
+        name: "Prajakta Ma'am",
+        imgUrl: "https://github.com/prajaktadharpure28.png",
+        whatsapp: " 9552864752",
+      }
     },
     {
       setName: "Set-D",
@@ -40,7 +55,12 @@ function Quiz() {
         "WAP to calculate distance covered by car by taking speed and time from user. 🚗 HINT: use formula distance = speed * time",
         "Write a c program to calculate 'perimeter' of a 'rectangle' by taking value of length and breadth from user.",
         "WAP to calculate bill by taking Rate and Quantity from user. 💰 HINT: use formula bill = rate * quantity",
-      ]
+      ],
+      ta: {
+        name: "Anand Sir",
+        imgUrl: "https://github.com/AnandShirbhaiyye.png",
+        whatsapp: "7020407429",
+      }
     }
   ];
 
@@ -92,6 +112,18 @@ function Quiz() {
           return <div className='question-panel card' key={index}>{index+1}) {question}</div>
         })
       }
+      <div className='ta-container'>
+        <p className='instructions'>Kindly send answers to teaching assistant given below:</p>
+        <div className='ta-card'>
+          <div className=''>
+            <img src={quizData[quizNumber]?.ta?.imgUrl} alt="ta-img" className='ta-img'/>
+          </div>
+          <div className='p-2'>
+            <h5>{quizData[quizNumber]?.ta?.name}</h5>
+            <h6>Whatsapp: {quizData[quizNumber]?.ta?.whatsapp}</h6>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
