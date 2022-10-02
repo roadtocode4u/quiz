@@ -9,7 +9,7 @@ function Quiz() {
     {
       setName: "Set-A",
       questions: [
-        "Write a c program to check whether user is eligible for voting or not. ",
+        "Write a c program to check whether user is eligible for voting or not. 💡 HINT: use ternary operator.",
         "Write a c program to take input 5 subject from user and print sum and percentage .",
         "Write a c program take input from user and find area of rectangle.",
         "Write a c program to check  character is vowel or not.",
@@ -36,10 +36,10 @@ function Quiz() {
     {
       setName: "Set-D",
       questions: [
-        "Write a c program to check given number is prime or not .",
+        "Write a c program to check given number is odd or even using ternary operator.",
         "Write a c program to take input from user and print sum and percentage .",
         "Write a c program to calculate perimeter and area of a rectangle when length and breadth is given. (length = 10 breadth = 20)",
-        " Write a c program to to calculate bill when rate and quantity is given.(rate=5, quantity=10)",
+        "Write a c program to to calculate bill when rate and quantity is given.(rate=5, quantity=10)",
       ]
     }
   ];
@@ -49,6 +49,12 @@ function Quiz() {
   const [quizNumber, setQuizNumber] = useState(null);
 
   useEffect(() => {
+    if(!localStorage.getItem("setNumber") || !localStorage.getItem('fullName'))
+    {
+      localStorage.clear();
+      alert('Enter Name and Mobile First');
+      window.location.href = "/";
+    }
     if (localStorage.getItem("setNumber")) {
       setQuizNumber(localStorage.getItem("setNumber"));
     }
