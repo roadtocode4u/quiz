@@ -9,37 +9,37 @@ function Quiz() {
     {
       setName: "Set-A",
       questions: [
-        "Write a c program to check whether user is eligible for voting or not. 💡 HINT: use ternary operator.",
-        "Write a c program to take input 5 subject from user and print sum and percentage .",
-        "Write a c program take input from user and find area of rectangle.",
-        "Write a c program to check  character is vowel or not.",
+        "WAP to check whether user is eligible for voting or not. 💡 HINT: use ternary operator.",
+        "WAP to take input 3 subject from user and print sum and percentage.",
+        "WAP take input from user and find 'area' of 'rectangle' by taking value of length and breadth from user.",
+        "WAP to check if two numbers are equal or not using ternary operator.",
       ]
     },
     {
       setName: "Set-B",
       questions: [
-        "Write a c program to check whether year is leap year or not.",
-        "Write a c program to take input from user and print sum and percentage.",
-        "Write a c program take  input from user and find area of circle.",
-        "Write a c program to find sum of first 10 natural number.",
+        "WAP to check whether year is leap year or not. 💡 HINT: use ternary operator and year which is divisible by 4 is leap year.",
+        "WAP to temperature in Celsius and convert it into Fahrenheit. 🌡 HINT: use formula °F = (°C × 9/5) + 32 ",
+        "Write a c program take  input from user and find 'area' of 'circle' by taking value of radius from user.",
+        "WAP to find largest number among two numbers using ternary operator.",
       ]
     },
     {
       setName: "Set-C",
       questions: [
-        "Write a c program to check number is negative or positive.",
-        "Write a c program to take input from user and print sum and percentage .",
-        "Write a c program to calculate perimeter and area of a circle when radius is given. (radius=5)",
-        "Write a program to convert km to m and cm.",
+        "WAP to check number is negative or positive. 💡 HINT: use ternary operator.",
+        "WAP to calculate simple interest by taking values of Principle, Rate and Time from user. 💰 HINT: use formula SI = (p * r * t) / 100",
+        "Write a c program to calculate 'perimeter' of 'circle' by taking value of radius from user.",
+        "WAP to check if given number is divisible by 5 and 3 or not using ternary operator",
       ]
     },
     {
       setName: "Set-D",
       questions: [
-        "Write a c program to check given number is odd or even using ternary operator.",
-        "Write a c program to take input from user and print sum and percentage .",
-        "Write a c program to calculate perimeter and area of a rectangle when length and breadth is given. (length = 10 breadth = 20)",
-        "Write a c program to to calculate bill when rate and quantity is given.(rate=5, quantity=10)",
+        "WAP to check given number is odd or even using ternary operator. 💡 HINT: use ternary operator.",
+        "WAP to calculate distance covered by car by taking speed and time from user. 🚗 HINT: use formula distance = speed * time",
+        "Write a c program to calculate 'perimeter' of a 'rectangle' by taking value of length and breadth from user.",
+        "WAP to calculate bill by taking Rate and Quantity from user. 💰 HINT: use formula bill = rate * quantity",
       ]
     }
   ];
