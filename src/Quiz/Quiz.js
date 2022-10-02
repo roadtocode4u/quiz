@@ -112,6 +112,9 @@ function Quiz() {
           return <div className='question-panel card' key={index}>{index+1}) {question}</div>
         })
       }
+      <div className='p-3'>
+        <h2>All The Best 👍</h2>
+      </div>
       <div className='ta-container'>
         <p className='instructions'>Kindly send answers to teaching assistant given below:</p>
         <div className='ta-card'>

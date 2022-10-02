@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react'
+import Countdown from 'react-countdown';
 import "./Login.css"
 import Logo from '../img/logo.png'
 
@@ -22,12 +23,10 @@ function Login() {
     localStorage.setItem('mobile', mobile)
   }
 
-  return (
-    <div className='container'>
-
-      <img src={Logo} className="img-logo" alt="logo" />
-
-      <form onSubmit={saveDetails}>
+  const renderer = ({ hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return(<form onSubmit={saveDetails}>
         <div className="form-group mt-3">
           <label htmlFor="fullName">Name</label>
           <input type="text" className="form-control" id="fullName" placeholder="Enter your Full Name"
@@ -45,7 +44,21 @@ function Login() {
         </div>
 
         <button type="submit" className="next-button">Next</button>
-      </form>
+      </form>)
+    } else {
+      // Render a countdown
+      return (<p className='waiting-time'>Wait for {minutes} minutes {seconds} seconds ⏰</p>);
+    }
+  };
+
+  return (
+    <div className='container'>
+
+      <img src={Logo} className="img-logo" alt="logo" />
+      <Countdown
+        date={"2022-10-02T20:00:00"}
+        renderer={renderer}
+      />
     </div>
   )
 }
