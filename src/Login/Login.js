@@ -47,7 +47,7 @@ function Login() {
       </form>)
     } else {
       // Render a countdown
-      return (<p className='waiting-time'>Wait for {minutes} minutes {seconds} seconds ⏰</p>);
+      return (<p className='waiting-time'>Wait for {hours} hours, {minutes} minutes and {seconds} seconds ⏰</p>);
     }
   };
 
@@ -56,7 +56,7 @@ function Login() {
 
       <img src={Logo} className="img-logo" alt="logo" />
       <Countdown
-        date={"2022-10-02T20:00:00"}
+        date={"2022-12-19T20:00:00"}
         renderer={renderer}
       />
     </div>
