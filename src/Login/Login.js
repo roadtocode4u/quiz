@@ -9,7 +9,7 @@ function Login() {
 
   useEffect(() => {
     if (!localStorage.getItem("setNumber")) {
-      const randomSetNo = Math.floor(Math.random() * 4);
+      const randomSetNo = Math.floor(Math.random() * 5);
       localStorage.setItem("setNumber", randomSetNo);
     }
 

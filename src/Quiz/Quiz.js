@@ -40,7 +40,7 @@ function Quiz() {
       setName: "Set-C",
       questions: [
         "WAP to check number is negative or positive. 💡 HINT: use ternary operator.",
-        "WAP to create a function to calculate simple interest when P, R and T is passed to this function. 💰 HINT: use formula SI = (p * r * t) / 100 (p = Your birthday Year,  r = Your birthday Date, t = Your birthday Month)", 
+        "WAP to create a function to calculate simple interest when P, R and T is passed to this function. 💰 HINT: use formula SI = (p * r * t) / 100 (p = Your birthday Year,  r = Your birthday Date, t = Your birthday Month)",
         "Write a c program to calculate 'perimeter' of 'circle' by taking value of radius from user.",
         "WAP Program to implement Linear Search on arr. arr=[100,200,300,400,500] and search element 400.",
         "WAP to print sum of 1 to 10 number using for loop?"
@@ -99,6 +99,7 @@ function Quiz() {
     }
     if(!localStorage.getItem("slackNotified"))
     {
+      console.log("Sending Data to Slack");
       sendDataToSlack(localStorage.getItem('fullName'), setNames[localStorage.getItem('setNumber')]);
     }
   }, []);
@@ -112,10 +113,11 @@ function Quiz() {
       },
       {
         headers: {
-           authorization: `Bearer xoxb-1925858523235-3898160116240-H6xwntp6TZTcl2pSI2nfEYHc`,
+           authorization: `Bearer ${process.env.REACT_APP_SLACK_TOKEN}`,
         }
       }
     );
+    console.log(response);
     if(response?.data?.ok===true)
     {
       localStorage.setItem('slackNotified', "true");
