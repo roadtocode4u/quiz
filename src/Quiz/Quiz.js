@@ -61,10 +61,24 @@ function Quiz() {
         imgUrl: "https://github.com/AnandShirbhaiyye.png",
         whatsapp: "7020407429",
       }
+    },
+    {
+      setName: "Set-E",
+      questions: [
+        "WAP to check given number is odd or even using ternary operator. 💡 HINT: use ternary operator.",
+        "WAP to calculate distance covered by car by taking speed and time from user. 🚗 HINT: use formula distance = speed * time",
+        "Write a c program to calculate 'perimeter' of a 'rectangle' by taking value of length and breadth from user.",
+        "WAP to calculate bill by taking Rate and Quantity from user. 💰 HINT: use formula bill = rate * quantity",
+      ],
+      ta: {
+        name: "Yash Sir",
+        imgUrl: "https://github.com/yashnaravade.png",
+        whatsapp: "9860847191",
+      }
     }
   ];
 
-  const setNames = ["Set-A", "Set-B", "Set-C", "Set-D"];
+  const setNames = ["Set-A", "Set-B", "Set-C", "Set-D", "Set-E"];
 
   const [quizNumber, setQuizNumber] = useState(null);
 
@@ -89,7 +103,7 @@ function Quiz() {
       "/chat.postMessage",
       {
         channel: "C044SA8T69H",
-        text: `C Programming Quiz  => Student Name: *${studentName}*, Set Number: *${setNumber}*`
+        text: `C++ Programming Test  => Student Name: *${studentName}*, Set Number: *${setNumber}*`
       },
       {
         headers: {
@@ -105,7 +119,7 @@ function Quiz() {
 
   return (
     <div  className='container'>
-      <h1 className='text-center header'>C Programming Test-1</h1>
+      <h1 className='text-center header'>C++ Programming Test-1</h1>
       <h2 className='text-center'>{quizData[quizNumber]?.setName}</h2>
       {
         quizData[quizNumber]?.questions?.map((question, index)=>{
