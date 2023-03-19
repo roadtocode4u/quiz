@@ -46,9 +46,9 @@ function Quiz() {
         "WAP to print sum of 1 to 10 number using for loop?"
       ],
       ta: {
-        name: "Prajakta Ma'am",
-        imgUrl: "https://github.com/prajaktadharpure28.png",
-        whatsapp: " 9552864752",
+        name: "Sakshi Ma'am",
+        imgUrl: "https://github.com/sakshi-rah.png",
+        whatsapp: "9356580327",
       }
     },
     {
@@ -65,25 +65,10 @@ function Quiz() {
         imgUrl: "https://github.com/AnandShirbhaiyye.png",
         whatsapp: "7020407429",
       }
-    },
-    {
-      setName: "Set-E",
-      questions: [
-        "WAP to check given number is odd or even using ternary operator. 💡 HINT: use ternary operator.",
-        "WAP to calculate smallest number among 3 using if-else-ladder ?",
-        "WAP to calculate sum of 5 subjects and their percentage and print grade.",
-        "WAP to calculate sum of only odd numbers from given array. [15,25,60,55,56,78]",
-        "WAP Program to implement Binary Search on arr. arr=[20,30,50,70,80,70] and search element 50.",
-      ],
-      ta: {
-        name: "Yash Sir",
-        imgUrl: "https://github.com/yashnaravade.png",
-        whatsapp: "9860847191",
-      }
     }
   ];
 
-  const setNames = ["Set-A", "Set-B", "Set-C", "Set-D", "Set-E"];
+  const setNames = ["Set-A", "Set-B", "Set-C", "Set-D"];
 
   const [quizNumber, setQuizNumber] = useState(null);
 
@@ -109,7 +94,7 @@ function Quiz() {
       "/chat.postMessage",
       {
         channel: "C044SA8T69H",
-        text: `C++ Programming Test  => Student Name: *${studentName}*, Set Number: *${setNumber}*`
+        text: `C Programming Test  => Student Name: *${studentName}*, Set Number: *${setNumber}*`
       },
       {
         headers: {
@@ -126,7 +111,7 @@ function Quiz() {
 
   return (
     <div  className='container'>
-      <h1 className='text-center header'>C++ Programming Test-1</h1>
+      <h1 className='text-center header'>C Programming Test-1</h1>
       <h2 className='text-center'>{quizData[quizNumber]?.setName}</h2>
       {
         quizData[quizNumber]?.questions?.map((question, index)=>{
