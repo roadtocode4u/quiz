@@ -56,7 +56,7 @@ function Login() {
 
       <img src={Logo} className="img-logo" alt="logo" />
       <Countdown
-        date={"2023-03-21T09:00:00"}
+        date={"2023-03-21T18:00:00"}
         renderer={renderer}
       />
     </div>
