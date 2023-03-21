@@ -81,7 +81,7 @@ function Quiz() {
 
   return (
     <div  className='container'>
-      <h1 className='text-center header'>C Programming Test-1</h1>
+      <h1 className='text-center header'>Python Programming Test-1</h1>
       <h2 className='text-center'>{quizData[quizNumber]?.setName}</h2>
       {
         quizData[quizNumber]?.questions?.map((question, index)=>{
