@@ -9,11 +9,11 @@ function Quiz() {
     {
       setName: "Set-A",
       questions: [
-        "WAP to check whether user is eligible for voting or not. 💡 HINT: use ternary operator.",
-        "WAP to take input 5 subject from user and print sum and percentage.",
-        "WAP take input from user and find 'area' of 'rectangle' by taking value of length and breadth from user.",
-        "WAP Program to implement Binary Search on arr. arr=[20,33,65,74,89,90,400] and search element 74.",
-        "Take an array of your mobile number digits and WAP to find sum of that array."
+      "Write a program Check Number is Divisible by 3 and 5 using 'and' operator.",
+      "Write a program to print Grocery Items using keys and values.",
+      "Write a program to take input for marks of 5 subject and display the grade.",
+      "Write a program to Find the Largerst Number Among Three Numbers by using Nested-if statement.",
+      "Write a program to reversed the Present Number." 
       ],
       ta: {
         name: "Pinki Ma'am",
@@ -24,51 +24,21 @@ function Quiz() {
     {
       setName: "Set-B",
       questions: [
-        "WAP to check whether year is leap year or not. 💡 HINT: use ternary operator and year which is divisible by 4 is leap year.",
-        "WAP to temperature in Celsius and convert it into Fahrenheit. 🌡 HINT: use formula °F = (°C × 9/5) + 32 ",
-        "WAP to implement menu selection program using switch case.",
-        "WAP Program to implement Linear Search on arr. arr=[20,30,40,50,60,80] and search element 40.",
-        "WAP to find Smallest element from given array. [100, 40, 30, 50, 60]",
-      ],
-      ta: {
-        name: "Vaishnavi Ma'am",
-        imgUrl: "https://github.com/vaishnavihole.png",
-        whatsapp: "9588603013",
-      }
-    },
-    {
-      setName: "Set-C",
-      questions: [
-        "WAP to check number is negative or positive. 💡 HINT: use ternary operator.",
-        "WAP to create a function to calculate simple interest when P, R and T is passed to this function. 💰 HINT: use formula SI = (p * r * t) / 100 (p = Your birthday Year,  r = Your birthday Date, t = Your birthday Month)",
-        "Write a c program to calculate 'perimeter' of 'circle' by taking value of radius from user.",
-        "WAP Program to implement Linear Search on arr. arr=[100,200,300,400,500] and search element 400.",
-        "WAP to print sum of 1 to 10 number using for loop?"
+        "Write a program Check Number is Divisible by 5 and 20 using 'and' operator.",
+        "Write a program to print courses using keys and values.",
+        "Write a program to take input for marks of 5 subject and display the grade.",
+        "Write a program to Find the smallest Number Among Three Numbers by using Nested-if statement.",
+        "Write a program to Print the Fibonacci sequence."
       ],
       ta: {
         name: "Sakshi Ma'am",
         imgUrl: "https://github.com/sakshi-rah.png",
         whatsapp: "9356580327",
       }
-    },
-    {
-      setName: "Set-D",
-      questions: [
-        "WAP to check given number is odd or even using ternary operator. 💡 HINT: use ternary operator.",
-        "WAP to find Largest element from given array. [58, 78, 96, 100, 50]",
-        "WAP to calculate bill by taking Rate and Quantity from user. 💰 HINT: use formula bill = rate * quantity",
-        "WAP to Calculate Addition, substraction, Multiplication,Division of two numbers using functions.",
-        "WAP Program to implement Binary Search on arr. arr=[10,20,30,40,50] and search element 30.",
-      ],
-      ta: {
-        name: "Anand Sir",
-        imgUrl: "https://github.com/AnandShirbhaiyye.png",
-        whatsapp: "7020407429",
-      }
     }
   ];
 
-  const setNames = ["Set-A", "Set-B", "Set-C", "Set-D"];
+  const setNames = ["Set-A", "Set-B"];
 
   const [quizNumber, setQuizNumber] = useState(null);
 
